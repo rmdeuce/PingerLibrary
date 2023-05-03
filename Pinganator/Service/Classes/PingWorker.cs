@@ -1,7 +1,5 @@
 ﻿using Pinganator.Service.Interfaces;
 using System.Collections.Concurrent;
-using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 
@@ -13,77 +11,62 @@ namespace Pinganator.Service.Classes
         public Dictionary<int, IPAddress> Servers { get; set; }
             = new Dictionary<int, IPAddress>();
 
-        public ConcurrentDictionary<int, PingReply> Result { get; set; }
+        public ConcurrentDictionary<int, PingReply> Result { get; }
+            = new ConcurrentDictionary<int, PingReply>();
 
-        public void Polling()
+        public int ThreadCount { get; set; } = 4;
+
+        public int ServerTimeout { get; set; } = 150;
+
+        public ConcurrentDictionary<int, PingReply> Polling()
         {
-            int countServers = Servers.Count;
-
-            Result = new ConcurrentDictionary<int, PingReply>();
-
-            //Task[] arrayTasks = new Task[countServers];
-
-            Stopwatch stopwatch = new Stopwatch(); //Таймер
-            stopwatch.Start();
-
-            if (countServers == 0)
-                return;
+            if (Servers.Count == 0)
+                throw new Exception("Ваш список серверов пуст");   
             
-            int blockSize = Servers.Count / 10;
+            var blockSize = (int)Math.Round((decimal)Servers.Count / ThreadCount);
 
-            var arr = new List<Dictionary<int, IPAddress>>();
+            var serversList = new List<Dictionary<int, IPAddress>>(ThreadCount)
+            {
+                new Dictionary<int, IPAddress>(blockSize)
+            };
 
-            arr.Add(new Dictionary<int, IPAddress>(blockSize));
-
-            var current = arr[0];
+            var current = serversList[0];
 
             for (int i = 0; i < Servers.Count; i++)
             {
-
-                if (i != 0 && i % blockSize == 0)
+                if (i % blockSize == 0)
                 {
-                    var curDic = new Dictionary<int, IPAddress>(blockSize);
+                    var currentDictionairy = new Dictionary<int, IPAddress>(blockSize);
 
-                    arr.Add(curDic);
+                    serversList.Add(currentDictionairy);
 
-                    current = curDic;
-
-                    current.Add(Servers.ElementAt(i).Key, Servers.ElementAt(i).Value);
+                    current = currentDictionairy;
                 }
-                else
-                {
-                    current.Add(Servers.ElementAt(i).Key, Servers.ElementAt(i).Value);
-                }
-
+                
+                current.Add(Servers.ElementAt(i).Key, Servers.ElementAt(i).Value);
             }
 
-            stopwatch.Stop(); //Остановка таймера
-            TimeSpan ts = stopwatch.Elapsed;
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-            Console.WriteLine("RunTime " + elapsedTime); 
-        }
+            var tasks = new List<Task>();
 
-        private void ParallelPing(Dictionary<int, IPAddress> inputDict, ConcurrentDictionary<int, PingReply> outputDict)
-        {
-            int countServers = inputDict.Count;
-            if (countServers == 0)
-                return;
-
-            Parallel.ForEach(inputDict, (server) =>
+            foreach (var dictionary in serversList)
             {
-                Ping pinger = new Ping();
+                var task = Task.Run(() => SendPings(dictionary));
+                tasks.Add(task);
+            }       
 
-                try
-                {
-                    
-                    Result[server.Key] = pinger.Send(server.Value);
-                }
-                catch (Exception ex)
-                {
-                   
-                }
-            });
+            Task.WaitAll(tasks.ToArray());
+
+            return Result;
         }
 
+        private void SendPings(Dictionary<int, IPAddress> inputDictionary)
+        {
+            var pinger = new Ping();
+            
+            foreach (var server in inputDictionary)
+            {
+                Result[server.Key] = pinger.Send(server.Value, ServerTimeout);
+            }
+        }
     }
 }

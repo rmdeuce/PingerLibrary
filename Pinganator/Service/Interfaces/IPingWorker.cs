@@ -16,14 +16,22 @@ namespace Pinganator.Service.Interfaces
         /// Результат проверки пинга
         /// key - ID сервера
         /// </summary>
-        public ConcurrentDictionary<int, PingReply> Result { get; set; }
+        public ConcurrentDictionary<int, PingReply> Result { get; }
+
+        /// <summary>
+        /// Количество потоков, задействованное для опроса серверов
+        /// </summary>
+        public int ThreadCount { get; set; }
+
+        /// <summary>
+        /// Время ожидания ответа сервера при пинговании (мс.)
+        /// </summary>
+        public int ServerTimeout { get; set; }
 
         /// <summary>
         /// Опрос серверов
-        /// Обновляет Result
-        /// Принимает callback, который будет выполнен по окончании опроса
-        /// callback не является обязательным
+        /// Возвращает Result
         /// </summary>
-        public void Polling();    
+        public ConcurrentDictionary<int, PingReply> Polling();    
     }
 }
