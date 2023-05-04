@@ -9,7 +9,6 @@ namespace Pinganator.Service.Classes
     public class PingWorker : IPingWorker
     {
         public Dictionary<int, IPAddress> Servers { get; set; }
-            = new Dictionary<int, IPAddress>();
 
         public ConcurrentDictionary<int, PingReply> Result { get; }
             = new ConcurrentDictionary<int, PingReply>();
@@ -17,6 +16,16 @@ namespace Pinganator.Service.Classes
         public int ThreadCount { get; set; } = 4;
 
         public int ServerTimeout { get; set; } = 150;
+
+        public PingWorker()
+        {
+            Servers = new Dictionary<int, IPAddress>();
+        }
+
+        public PingWorker(Dictionary<int,IPAddress> servers)
+        {
+            Servers = servers;   
+        }
 
         public ConcurrentDictionary<int, PingReply> Polling()
         {
@@ -57,6 +66,13 @@ namespace Pinganator.Service.Classes
             Task.WaitAll(tasks.ToArray());
 
             return Result;
+        }
+
+        public ConcurrentDictionary<int, PingReply> Polling(Dictionary<int, IPAddress> servers)
+        {
+            Servers = servers;
+
+            return Polling();  
         }
 
         private void SendPings(Dictionary<int, IPAddress> inputDictionary)

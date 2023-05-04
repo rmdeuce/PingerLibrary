@@ -9,8 +9,8 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             var doPingWorker = new PingWorker();
-  
-            var doDictonary = new Dictionary<int, IPAddress>()
+
+                      var doDictonary = new Dictionary<int, IPAddress>()
             {
                 {345, IPAddress.Parse("192.168.16.62")},
                 {346, IPAddress.Parse("192.168.16.61")},
@@ -206,9 +206,9 @@ namespace ConsoleApp
                 {533, IPAddress.Parse("192.168.21.88")}
             }; 
 
-            doPingWorker.Servers = doDictonary;
+        //    doPingWorker.Servers = doDictonary;
 
-            var result = doPingWorker.Polling();
+            var result = doPingWorker.Polling(doDictonary);
 
             foreach (var pair in result)
             {
