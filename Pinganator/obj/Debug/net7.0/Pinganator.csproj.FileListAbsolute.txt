@@ -1,0 +1,12 @@
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\bin\Debug\net7.0\Pinganator.deps.json
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\bin\Debug\net7.0\Pinganator.dll
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\bin\Debug\net7.0\Pinganator.pdb
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.csproj.AssemblyReference.cache
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.AssemblyInfoInputs.cache
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.AssemblyInfo.cs
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.csproj.CoreCompileInputs.cache
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.dll
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\refint\Pinganator.dll
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.pdb
+C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\ref\Pinganator.dll
