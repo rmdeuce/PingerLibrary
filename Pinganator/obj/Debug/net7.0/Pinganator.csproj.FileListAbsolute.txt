@@ -10,3 +10,15 @@ C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Deb
 C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\refint\Pinganator.dll
 C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\Pinganator.pdb
 C:\Users\ЖлуткинРВ\Desktop\Code\ProjectNewPinganator\Pinganator\obj\Debug\net7.0\ref\Pinganator.dll
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\bin\Debug\net7.0\Pinganator.deps.json
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\bin\Debug\net7.0\Pinganator.dll
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\bin\Debug\net7.0\Pinganator.pdb
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.AssemblyInfoInputs.cache
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.AssemblyInfo.cs
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.csproj.CoreCompileInputs.cache
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.sourcelink.json
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.dll
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\refint\Pinganator.dll
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\Pinganator.pdb
+C:\Users\RmDeu\Desktop\Code\TechMeSkills\PingerLibrary\Pinganator\obj\Debug\net7.0\ref\Pinganator.dll

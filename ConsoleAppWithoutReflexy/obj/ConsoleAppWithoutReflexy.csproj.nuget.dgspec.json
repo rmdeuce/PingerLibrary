@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\ConsoleAppWithoutReflexy\\ConsoleAppWithoutReflexy.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\ConsoleAppWithoutReflexy\\ConsoleAppWithoutReflexy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\ConsoleAppWithoutReflexy\\ConsoleAppWithoutReflexy.csproj",
+        "projectName": "ConsoleAppWithoutReflexy",
+        "projectPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\ConsoleAppWithoutReflexy\\ConsoleAppWithoutReflexy.csproj",
+        "packagesPath": "C:\\Users\\RmDeu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\ConsoleAppWithoutReflexy\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RmDeu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj": {
+                "projectPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj",
+        "projectName": "Pinganator",
+        "projectPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj",
+        "packagesPath": "C:\\Users\\RmDeu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RmDeu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "System.Net.NetworkInformation": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

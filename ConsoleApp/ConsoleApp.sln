@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp.csproj", "{2E0A095D-E05F-4E42-AC05-767D0D5975F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp.csproj", "{2E0A095D-E05F-4E42-AC05-767D0D5975F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinganator", "..\Pinganator\Pinganator.csproj", "{8088A294-0285-4B42-904C-AB0D0B73695A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinganator", "..\Pinganator\Pinganator.csproj", "{8088A294-0285-4B42-904C-AB0D0B73695A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
