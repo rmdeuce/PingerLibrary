@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pinganator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acee61e369135baa84a77ad7a8211c4c209cc67c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fda9bc1694412c45ebfb9311ba6032238e3a361d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pinganator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pinganator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
