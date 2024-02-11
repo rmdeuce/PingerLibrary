@@ -1,6 +1,7 @@
-﻿using Pinganator.Service.Classes;
+﻿using System.Collections.Concurrent;
 using System.Net;
-using System.Text;
+using System.Net.NetworkInformation;
+using System.Reflection;
 
 namespace ConsoleApp
 {
@@ -8,9 +9,18 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            var doPingWorker = new PingWorker();
+            Assembly pinganator = Assembly.Load("Pinganator");
 
-                      var doDictonary = new Dictionary<int, IPAddress>()
+            Console.WriteLine(pinganator.FullName);
+
+            Type? pingWorkerType = pinganator.GetType("Pinganator.Service.Classes.PingWorker");
+
+            var doPingWorkerReflection = Activator.CreateInstance(pingWorkerType);
+
+            MethodInfo? polling = pingWorkerType.GetMethod("Polling", BindingFlags.Public | 
+                BindingFlags.Instance, null, new Type[] { typeof(Dictionary<int, IPAddress>) }, null);
+
+            var doDictonary = new Dictionary<int, IPAddress>()
             {
                 {345, IPAddress.Parse("192.168.16.62")},
                 {346, IPAddress.Parse("192.168.16.61")},
@@ -204,15 +214,13 @@ namespace ConsoleApp
                 {18, IPAddress.Parse("192.168.21.149")},
                 {523, IPAddress.Parse("192.168.3.56")},
                 {533, IPAddress.Parse("192.168.21.88")}
-            }; 
+            };
 
-        //    doPingWorker.Servers = doDictonary;
+            var result = polling.Invoke(doPingWorkerReflection, new object[] { doDictonary });
 
-            var result = doPingWorker.Polling(doDictonary);
-
-            foreach (var pair in result)
+            foreach (var item in (ConcurrentDictionary<int, PingReply>)result)
             {
-                Console.WriteLine($"Сервер {pair.Key} имеет статус {pair.Value.Status} и время ответа {pair.Value.RoundtripTime} мс" ); 
+                Console.WriteLine($"Server {item.Key} имеет статус {item.Value.Status} и время ответа {item.Value.RoundtripTime} мс");
             }
         }
     }

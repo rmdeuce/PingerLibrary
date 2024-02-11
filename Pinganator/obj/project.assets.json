@@ -2248,23 +2248,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ЖлуткинРВ\\.nuget\\packages\\": {},
+    "C:\\Users\\RmDeu\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ЖлуткинРВ\\Desktop\\Code\\ProjectNewPinganator\\Pinganator\\Pinganator.csproj",
+      "projectUniqueName": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj",
       "projectName": "Pinganator",
-      "projectPath": "C:\\Users\\ЖлуткинРВ\\Desktop\\Code\\ProjectNewPinganator\\Pinganator\\Pinganator.csproj",
-      "packagesPath": "C:\\Users\\ЖлуткинРВ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ЖлуткинРВ\\Desktop\\Code\\ProjectNewPinganator\\Pinganator\\obj\\",
+      "projectPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\Pinganator.csproj",
+      "packagesPath": "C:\\Users\\RmDeu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RmDeu\\Desktop\\Code\\TechMeSkills\\PingerLibrary\\Pinganator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ЖлуткинРВ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RmDeu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2274,8 +2274,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://git.tgmu.ru/api/v4/projects/7/packages/nuget/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
